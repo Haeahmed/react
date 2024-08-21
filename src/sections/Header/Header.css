@@ -207,6 +207,7 @@
     position: absolute;
     left: 0;
     top: 10px;
+    display: none;
     cursor: pointer;
     color: #01e281;
 }
@@ -289,6 +290,7 @@
         font-size: 30px;
         position: absolute;
         left: 0;
+        display: block;
         top: 10px;
         cursor: pointer;
         color: #01e281;
@@ -465,6 +467,7 @@
         position: absolute;
         left: 0;
         top: 10px;
+        display: block;
         cursor: pointer;
         color: #01e281;
     }
@@ -630,6 +633,7 @@
     .icnCls{
         font-size: 30px;
         position: absolute;
+        display: block;
         left: 0;
         top: 10px;
         cursor: pointer;
