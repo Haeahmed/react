@@ -1,0 +1,295 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.iconContact{
+    font-size: 100px;
+    background-color: #01e281;
+    border-radius: 50%;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.iconContact:hover{
+    color: #01e281;
+    background-color: white;
+}
+.iconsContact{
+    display: flex;
+    align-items: center;
+    gap: 250px;
+    width: 100%;
+    margin-left: 550px;
+    flex-wrap: wrap;
+}
+.iconsContact h4{
+    font-size: 25px;
+    font-weight: 400;
+}
+.bigBox{
+    width: 60%;
+    height: 100vh;
+    background-color: #122d40;
+    position: relative;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 50px;
+    margin-top: 100px;
+}
+.inputs{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 100px;
+}
+.textArea{
+    margin-top: 50px;
+}
+.btnSend{
+    width: 250px;
+    height: 10px;
+    text-align: center;
+    font-weight: 900 !important;
+}
+.bigBox2{
+    position: absolute;
+    top: 97%;
+    left: -100px;
+    z-index: -876;
+    transform: skew(-34deg, -5deg);
+    opacity: 0.5;
+    scale: 0.8;
+    animation: b2 4s 2s ease-in-out infinite alternate;
+}
+@keyframes b2 {
+    from{
+    transform: skew(-34deg, -5deg);
+    }
+    to{
+    transform: skew(34deg, 5deg);
+    }
+}
+.bigBox:last-child{
+    position: absolute;
+    top: 97%;
+    right: -100px;
+    scale: 0.8;
+    z-index: -876;
+    transform: rotate(37deg);
+    opacity: 0.5;
+    animation: b3 4s 2s ease-in-out infinite alternate;
+}
+@keyframes b3 {
+    from{
+    transform: rotate(37deg);
+    transform: skew(-34deg, -5deg);
+    }
+    to{
+    transform: rotate(-37deg);
+    transform: skew(34deg, 5deg);
+    }
+}
+
+/* الشاشات الكبيرة (أجهزة الكمبيوتر) */
+@media (min-width: 1200px) {
+    .contact {
+      gap: 50px;
+    }
+  
+    .iconContact {
+      font-size: 100px;
+      padding: 20px;
+    }
+  
+    .iconsContact {
+      gap: 250px;
+      margin-left: 550px;
+    }
+  
+    .bigBox {
+      width: 60%;
+      height: 100vh;
+      padding: 50px;
+      margin-top: 100px;
+    }
+  
+    .inputs {
+      margin-top: 100px;
+    }
+  
+    .btnSend {
+      width: 250px;
+      height: 50px;
+      text-align: center;
+      font-weight: 900 !important;
+    }
+  
+    .bigBox2 {
+      top: 97%;
+      left: -100px;
+      transform: skew(-34deg, -5deg);
+      opacity: 0.5;
+      scale: 0.8;
+      animation: b2 4s 2s ease-in-out infinite alternate;
+    }
+  
+    .bigBox:last-child {
+      top: 97%;
+      right: -100px;
+      transform: rotate(37deg);
+      opacity: 0.5;
+      animation: b3 4s 2s ease-in-out infinite alternate;
+    }
+  }
+  
+  /* الشاشات المتوسطة (الأجهزة اللوحية) */
+  @media (min-width: 992px) and (max-width: 1980px) {
+    .contact {
+      gap: 30px;
+    }
+  
+    .iconContact {
+      font-size: 80px;
+      padding: 15px;
+    }
+  
+    .iconsContact {
+      gap: 150px;
+      margin-left: 300px;
+    }
+  
+    .bigBox {
+      width: 80%;
+      height: auto;
+      padding: 30px;
+      margin-top: 50px;
+    }
+  
+    .inputs {
+      margin-top: 50px;
+    }
+  
+    .btnSend {
+      width: 200px;
+      height: 45px;
+    }
+  
+    .bigBox2 {
+      top: 90%;
+      left: -80px;
+      scale: 0.7;
+      animation: b2 4s 2s ease-in-out infinite alternate;
+    }
+  
+    .bigBox:last-child {
+      top: 90%;
+      right: -80px;
+      scale: 0.7;
+      animation: b3 4s 2s ease-in-out infinite alternate;
+    }
+  }
+  
+  /* الشاشات الصغيرة (الهواتف الذكية) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .contact {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .iconContact {
+      font-size: 60px;
+      padding: 10px;
+    }
+  
+    .iconsContact {
+      gap: 50px;
+      margin-left: 0;
+    }
+  
+    .bigBox {
+      width: 90%;
+      height: auto;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  
+    .inputs {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+  
+    .btnSend {
+      width: 150px;
+      height: 40px;
+    }
+  
+    .bigBox2 {
+      top: 85%;
+      left: -50px;
+      scale: 0.6;
+      animation: b2 4s 2s ease-in-out infinite alternate;
+    }
+  
+    .bigBox:last-child {
+      top: 85%;
+      right: -50px;
+      scale: 0.6;
+      animation: b3 4s 2s ease-in-out infinite alternate;
+    }
+  }
+  
+  /* الشاشات الأصغر من 480px */
+  @media screen and (max-width: 767px) {
+    .contact {
+      gap: 10px;
+    }
+  
+    .iconContact {
+      font-size: 50px;
+      padding: 5px;
+    }
+  
+    .iconsContact {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-left: 0;
+    }
+  
+    .iconsContact h4 {
+      font-size: 20px;
+      color: #27638d;
+    }
+  
+    .bigBox {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  
+    .inputs {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .btnSend {
+      width: 148px;
+      height: 35px;
+    }
+  
+    .bigBox2 {
+      display: none;
+    }
+  
+    .bigBox:last-child {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,35 @@
+.topBar{
+    width: 96%;
+    height: 80px;
+    background-color: #01e281;
+    color: #173850;
+    margin: 0px 20px;
+    padding-top: 13px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .topBar {
+        height: 70px; /* تقليل الارتفاع في الشاشات الأصغر */
+        margin: 0px 10px; /* تقليل الهوامش */
+    }
+}
+
+@media (max-width: 768px) {
+    .topBar {
+        height: 60px; /* تقليل الارتفاع أكثر */
+        margin: 0px 5px; /* تقليل الهوامش أكثر */
+        padding-top: 10px; /* تقليل الحشو العلوي */
+    }
+}
+
+@media (max-width: 480px) {
+    .topBar {
+        height: 50px; /* تقليل الارتفاع أكثر */
+        margin: 0px 2px; /* تقليل الهوامش أكثر */
+        padding-top: 8px; /* تقليل الحشو العلوي */
+        font-size: 14px; /* تقليل حجم الخط */
+    }
+}

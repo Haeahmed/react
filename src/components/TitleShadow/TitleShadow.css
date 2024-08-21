@@ -1,0 +1,86 @@
+.firstH1 {
+    font-size: 65px;
+    color: #01e281;
+    font-weight: 900;
+    width: max-content;
+    position: relative;
+  }
+  .firstH1::after {
+    position: absolute;
+    content: "";
+    width: 103%;
+    height: 30%;
+    bottom: 10px;
+    left: -5px;
+    background: #111;
+    z-index: 2;
+    opacity: 0.2;
+    border-radius: 4px;
+    background-color: #01e281;
+  }
+  @media (min-width: 769px) and (max-width: 1200px) {
+    .firstH1 {
+      font-size: 35px !important;
+      color: #01e281;
+      font-weight: 900;
+      width: max-content;
+      position: relative;
+    }
+    .firstH1::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 30%;
+      bottom: 10px;
+      left: -5px;
+      background: #111;
+      z-index: 2;
+      opacity: 0.2;
+      border-radius: 4px;
+      background-color: #01e281;
+    }
+}
+  @media (min-width: 460px) and (max-width: 768px) {
+    .firstH1 {
+      font-size: 35px !important;
+      color: #01e281;
+      font-weight: 900;
+      width: max-content;
+      position: relative;
+    }
+    .firstH1::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 30%;
+      bottom: 10px;
+      left: -5px;
+      background: #111;
+      z-index: 2;
+      opacity: 0.2;
+      border-radius: 4px;
+      background-color: #01e281;
+    }
+}
+@media (min-width: 300px) and (max-width: 480px) {
+  .firstH1 {
+    font-size: 25px !important;
+    color: #01e281;
+    font-weight: 900;
+    width: max-content;
+    position: relative;
+  }
+  .firstH1::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30%;
+    bottom: 10px;
+    left: -5px;
+    background: #111;
+    z-index: 2;
+    opacity: 0.2;
+    border-radius: 4px;
+    background-color: #01e281;
+  }
+}

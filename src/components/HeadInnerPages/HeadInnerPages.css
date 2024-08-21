@@ -1,0 +1,118 @@
+.headerCheckout{
+    width: 100%;
+    height: 200px;
+    background-color: #f9f9f9;
+    transform: translateY(-50px);
+    z-index: -1423;
+    padding-top: 90px !important;
+    position: sticky;
+    display: flex;
+    padding: 0px 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.iconHome{
+    font-size: 40px;
+}
+
+.arrowRight{
+    font-size: 38px;
+}
+.number{
+    font-size: 25px;
+    background-color: #01e281;
+    font-weight: 900;
+    padding: 10px;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.arrowch{
+    font-size: 40px;
+    opacity: 0.5;
+}
+
+
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .headerCheckout {
+        padding-top: 70px !important; /* تقليل الحشو العلوي */
+        padding: 0px 30px; /* تقليل الحشو الجانبي */
+        height: 180px; /* تقليل الارتفاع */
+    }
+    
+    .iconHome {
+        font-size: 35px; /* تقليل حجم الأيقونة */
+    }
+    
+    .arrowRight {
+        font-size: 34px; /* تقليل حجم السهم */
+    }
+    
+    .number {
+        font-size: 22px; /* تقليل حجم الرقم */
+        width: 60px; /* تقليل عرض الرقم */
+        height: 60px; /* تقليل ارتفاع الرقم */
+    }
+    
+    .arrowch {
+        font-size: 35px; /* تقليل حجم السهم */
+    }
+}
+
+@media (max-width: 768px) {
+    .headerCheckout {
+        padding-top: 50px !important; /* تقليل الحشو العلوي أكثر */
+        padding: 0px 20px; /* تقليل الحشو الجانبي أكثر */
+        height: 160px; /* تقليل الارتفاع أكثر */
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+        align-items: flex-start; /* محاذاة العناصر إلى اليسار */
+    }
+
+    .iconHome {
+        font-size: 30px; /* تقليل حجم الأيقونة أكثر */
+    }
+
+    .arrowRight {
+        font-size: 28px; /* تقليل حجم السهم أكثر */
+    }
+
+    .number {
+        font-size: 20px; /* تقليل حجم الرقم أكثر */
+        width: 50px; /* تقليل عرض الرقم أكثر */
+        height: 50px; /* تقليل ارتفاع الرقم أكثر */
+    }
+
+    .arrowch {
+        font-size: 30px; /* تقليل حجم السهم أكثر */
+    }
+}
+
+@media (max-width: 480px) {
+    .headerCheckout {
+        padding-top: 30px !important; /* تقليل الحشو العلوي أكثر */
+        padding: 0px 10px; /* تقليل الحشو الجانبي أكثر */
+        height: auto; /* جعل الارتفاع تلقائي */
+    }
+
+    .iconHome {
+        font-size: 28px; /* تقليل حجم الأيقونة أكثر */
+    }
+
+    .arrowRight {
+        font-size: 26px; /* تقليل حجم السهم أكثر */
+    }
+
+    .number {
+        font-size: 18px; /* تقليل حجم الرقم أكثر */
+        width: 40px; /* تقليل عرض الرقم أكثر */
+        height: 40px; /* تقليل ارتفاع الرقم أكثر */
+    }
+
+    .arrowch {
+        font-size: 28px; /* تقليل حجم السهم أكثر */
+    }
+}

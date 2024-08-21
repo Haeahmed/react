@@ -1,0 +1,188 @@
+.Cart{
+    width: 100%;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+.inputNumber{
+    width: 140px;
+    height: 70px;
+    border: none;
+    outline: none;
+    margin: 10px 50px;
+    border: 0.5px solid #7a7a7a;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+.inputNumber:focus{
+    border: 1px solid #01e281;
+    border-radius: 30px;
+}
+.circle{
+    color: #173850;
+    font-size: 27px;
+    background-color: #d6d5d5;
+    text-align: center;
+    padding: 0px 20px;
+    border-radius: 50%;
+    height: 50px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.circle:hover{
+    background-color: #01e281;
+    color: #173850;
+}
+.decIncNumber{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    margin-left: 50px;
+}
+.tableItems{
+    height: 200px;
+    width: 100%;
+}
+.closeItem{
+    width: 100px !important;
+    text-align: center !important;
+}
+.deleteItem{
+    color: red;
+    padding: 9px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+}
+.deleteItem:hover{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+.textLink{
+    transition: all 0.5s ease-in-out;    
+    cursor: pointer;
+}
+.textLink:hover{
+    color: #01e281;
+}
+.leftBox{
+    width: 50%;
+    display: flex;
+    background-color: #f1f2f6;
+    align-items: center;    
+    height: 892px;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 50px;
+    margin-left: 50px;
+    padding-bottom: 70px;
+    border-radius: 40px;
+}
+.rightBox{
+    width: 50%;
+}
+.cards{
+    min-width: 100%;
+    max-height: 710px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.photo{
+    z-index: 9;
+}
+.rightBox{
+    width: 50%;
+    background-color: #f1f2f6;
+    border-radius: 40px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+.row{
+    width: 100%;
+    border: 0.5px solid #d6d5d5;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 300;
+    gap: 300px;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+.row h2{
+    transform: translateX(20px);
+}
+.butn{
+    height: 21px !important;
+    padding: 40px;   
+    margin-top: 20px;
+    transform: translateX(250px);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .leftBox, .rightBox {
+        width: 100%; /* جعل العرض كامل في الشاشات الأصغر */
+        margin-left: 0; /* إزالة الهوامش */
+        padding-left: 20px; /* تقليل الحشو الجانبي */
+        padding-right: 20px; /* إضافة حشو جانبي */
+        gap: 20px; /* تقليل الفجوة بين العناصر */
+        height: auto; /* تغيير الارتفاع إلى تلقائي */
+    }
+
+    .decIncNumber {
+        margin-left: 20px; /* تقليل المسافة في الشاشات الأصغر */
+        width: auto; /* جعل العرض تلقائي */
+        gap: 10px; /* تقليل الفجوة بين العناصر */
+    }
+}
+
+@media (max-width: 768px) {
+    .inputNumber {
+        width: 100%; /* جعل العرض كامل في الشاشات الأصغر */
+        margin-left: 10px; /* تقليل المسافة الجانبية */
+        margin-right: 10px; /* تقليل المسافة الجانبية */
+        font-size: 18px; /* تقليل حجم الخط */
+        height: 60px; /* تقليل الارتفاع */
+    }
+
+   .row {
+       gap: 100px; /* تقليل الفجوة بين العناصر */
+       font-size: 20px; /* تقليل حجم الخط */
+   }
+
+   .butn {
+       padding: 15px; /* تقليل الحشو */
+   }
+}
+
+@media (max-width: 480px) {
+   .inputNumber {
+       font-size: 16px; /* تقليل حجم الخط أكثر */
+       height: 50px; /* تقليل الارتفاع أكثر */
+   }
+
+   .circle {
+       font-size: 20px; /* تقليل حجم الخط */
+       height: 40px; /* تقليل الارتفاع */
+   }
+
+   .row {
+       gap: 50px; /* تقليل الفجوة بين العناصر */
+       font-size: 18px; /* تقليل حجم الخط أكثر */
+   }
+
+   .butn {
+       padding: 10px; 
+   }}

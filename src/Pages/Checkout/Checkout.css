@@ -1,0 +1,96 @@
+.Checkout{
+    width: 100%;
+    height: 350vh;
+}
+
+.sectionCode{
+    width: 93%;
+    height: 150px;
+    margin-top: 150px;
+    margin-left: 70px;
+    background-color: #f9f9f9;
+    position: relative;
+    padding-top: 40px;
+    padding-left: 150px;
+}
+.question h2{
+    font-size: 30px;
+    transform: translateY(2px);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.question h2:hover{
+    color: #01e281;
+}
+.codeSquare{
+    position: absolute;
+    left: -20px;
+    top: 35px;
+    color: #357db1;
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 10px #f9f9f9;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .sectionCode {
+        margin-left: 50px; /* تقليل الهوامش في الشاشات الأصغر */
+        padding-left: 100px; /* تقليل الحشو الجانبي */
+        height: auto; /* جعل الارتفاع تلقائي */
+        padding-top: 20px; /* تقليل الحشو العلوي */
+    }
+
+    .question h2 {
+        font-size: 28px; /* تقليل حجم الخط */
+    }
+
+    .codeSquare {
+        width: 70px; /* تقليل عرض المربع */
+        height: 70px; /* تقليل ارتفاع المربع */
+        font-size: 28px; /* تقليل حجم الخط داخل المربع */
+        top: 30px; /* تعديل الموضع */
+    }
+}
+
+@media (max-width: 768px) {
+    .sectionCode {
+        margin-left: 30px; /* تقليل الهوامش أكثر */
+        padding-left: 50px; /* تقليل الحشو الجانبي أكثر */
+        height: auto; /* جعل الارتفاع تلقائي */
+        padding-top: 15px; /* تقليل الحشو العلوي أكثر */
+    }
+
+    .question h2 {
+        font-size: 24px; /* تقليل حجم الخط أكثر */
+    }
+
+    .codeSquare {
+        width: 60px; /* تقليل عرض المربع أكثر */
+        height: 60px; /* تقليل ارتفاع المربع أكثر */
+        font-size: 24px; /* تقليل حجم الخط داخل المربع أكثر */
+        top: 25px; /* تعديل الموضع أكثر */
+    }
+}
+
+@media (max-width: 480px) {
+    .sectionCode {
+        margin-left: 10px; /* إزالة الهوامش في الشاشات الصغيرة جدًا */
+        padding-left: 20px; /* تقليل الحشو الجانبي إلى الحد الأدنى */
+        height: auto; /* جعل الارتفاع تلقائي */
+        padding-top: 10px; /* تقليل الحشو العلوي إلى الحد الأدنى */
+    }
+
+    .question h2 {
+        font-size: 20px; /* تقليل حجم الخط بشكل كبير */
+    }
+
+    .codeSquare {
+        width: 50px; /* تقليل عرض المربع بشكل كبير */
+        height: 50px; /* تقليل ارتفاع المربع بشكل كبير */
+        font-size: 20px; /* تقليل حجم الخط داخل المربع بشكل كبير */
+        top: 20px; /* تعديل الموضع بشكل كبير */
+    }
+}

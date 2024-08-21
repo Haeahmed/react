@@ -1,0 +1,217 @@
+.DetailsCard{
+    width: 400px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: space-evenly;
+    border-radius: 57px 0px;
+    margin-top: 100px;
+    box-shadow: 2px 2px 80px 5px #ececec; 
+    position: relative;
+}
+.photo{
+    width: 350px;
+    height: 350px;
+    z-index: -2;
+}
+.icon{
+    border: 1px solid #c9c7c7;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 20px;
+    width: 50px;
+    z-index: 7654;
+    color: #2a2828;
+    height: 50px;
+    margin-right: 20px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.icon:hover{
+    color: #01e281;
+    border: 1px solid #01e281;
+}
+.h1DetailsCard{
+    font-size: 30px;
+    font-weight: 900;
+    width: 70%;
+    transition: all 0.5s ease-in-out;
+}
+.stars{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    gap: 50px;
+    color: gold;
+}
+.rightCircle{
+    width: 80px;
+    height: 300px;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+.innerButtonIcon1,
+.innerButtonIcon2,
+.innerButtonIcon3{
+    width: 215px !important;
+    height: 50px !important;
+    font-size: 23px !important;
+    cursor: pointer;
+    padding: 3px 9px !important;
+    transform: translateX(-30px);
+    transition: all 0.7s ease-in-out !important;
+    z-index: 5455445;
+    position: absolute;
+    text-align: center;
+}
+.innerButtonIcon2{
+    z-index: 5455445;
+    transform: translate(-144px,70px) !important;
+}
+.innerButtonIcon3{
+    z-index: 5455445;
+    transform: translate(-144px,143px) !important;
+}
+.innerButtonIcon1,
+.innerButtonIcon2,
+.innerButtonIcon3:hover{
+    background-color: #173850 !important;
+    color: #01e281 !important;
+}
+a{
+    text-decoration: none;
+}
+.bottomButton{
+    width: 280px !important;
+    padding: 17px !important;
+    height: 103px !important;
+    margin-right: 8px;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out !important;
+}
+.buttonbottom{
+    height: 81px;
+    font-size: 22px;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    background-color: #01e281;
+    border: none;
+    outline: none;
+    padding: 38px;
+    border-radius: 50px;
+    text-align: center;
+    transform: translateX(14px);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+    .DetailsCard {
+        width: 350px; /* تقليل العرض */
+        height: auto; /* جعل الارتفاع تلقائي */
+        margin-top: 80px; /* تقليل المسافة العلوية */
+    }
+
+    .photo {
+        width: 300px; /* تقليل العرض */
+        height: auto; /* جعل الارتفاع تلقائي */
+    }
+
+    .h1DetailsCard {
+        font-size: 28px; /* تقليل حجم الخط */
+        width: 80%; /* زيادة العرض */
+    }
+
+    .stars {
+        font-size: 28px; /* تقليل حجم الخط */
+        gap: 30px; /* تقليل الفجوة */
+    }
+}
+
+@media (max-width: 768px) {
+    .DetailsCard {
+        width: 60%; /* جعل العرض أكبر */
+        margin-top: 30px; /* تقليل المسافة العلوية أكثر */
+        height: 700px; /* جعل الارتفاع تلقائي */
+        padding-bottom: 20px; /* إضافة حشو سفلي */
+    }
+
+    .photo {
+        width: 50%; /* جعل العرض كامل */
+        height: 400px !important; /* جعل الارتفاع تلقائي */
+        margin-bottom: 10px; /* إضافة هامش سفلي */
+        border-radius: 60px;
+    }
+
+    .h1DetailsCard {
+        font-size: 35px; /* تقليل حجم الخط أكثر */
+        width: 90%; /* زيادة العرض */
+        text-align: center; /* محاذاة النص إلى الوسط */
+    }
+
+    .stars {
+        font-size: 34px; /* تقليل حجم الخط أكثر */
+        gap: 15px; /* تقليل الفجوة أكثر */
+    }
+
+   .innerButtonIcon1,
+   .innerButtonIcon2,
+   .innerButtonIcon3 {
+       width: auto; /* جعل العرض تلقائي */
+       font-size: 20px; /* تقليل حجم الخط */
+   }
+
+   .bottomButton {
+       width: auto; /* جعل العرض تلقائي */
+       padding: 10px; /* تقلي
+       
+   }
+}
+
+@media (max-width: 480px) {
+   .DetailsCard {
+       width: 100%; /* جعل العرض كامل */
+       margin-top: 40px; /* تقليل المسافة العلوية أكثر */
+   }
+
+   .photo {
+       width: 100%; /* جعل العرض كامل */
+       height: auto; /* جعل الارتفاع تلقائي */
+   }
+
+   .h1DetailsCard {
+       font-size: 20px; /* تقليل حجم الخط أكثر */
+       width: 100%; /* زيادة العرض */
+       text-align: center; /* محاذاة النص إلى الوسط */
+   }
+
+   .stars {
+       font-size: 20px; /* تقليل حجم الخط أكثر */
+       gap: 10px; /* تقليل الفجوة أكثر */
+   }
+
+   .innerButtonIcon1,
+   .innerButtonIcon2,
+   .innerButtonIcon3 {
+       width: auto; /* جعل العرض تلقائي */
+       font-size: 18px; /* تقليل حجم الخط أكثر */
+   }
+
+   .bottomButton {
+       width: auto; /* جعل العرض تلقائي */
+       padding: 10px; /* تقليل الحشو */
+   }
+
+   .buttonbottom {
+       font-size: 18px; /* تقليل حجم الخط أكثر */
+   }
+}

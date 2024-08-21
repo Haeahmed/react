@@ -1,0 +1,127 @@
+.BigCard {
+    width: 29.333%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    border-radius: 30px;
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-right: 80px;
+    transform: translateX(280px);
+    margin-bottom: 40px;
+  }
+  .shopNow {
+    padding: 0px 40px !important;
+    background-color: #173850 !important;
+    color: #01e281 !important;
+    height: 80px !important;
+    font-size: 25px !important;
+    font-weight: 900 !important;
+    transition: all 0.5s !important;
+    transform: translateX(-10px) !important;
+    margin-top: 100px !important;
+  }
+  .shopNow a{
+      text-decoration: none;
+      color: #01e281 !important;
+      transition: all 0.5s;
+  }
+  .shopNow a:hover{
+      color: #173850 !important;
+  }
+  .shopNow:hover {
+    background-color: #01e281 !important;
+    color: #173850 !important;
+  }
+  .tallCardH1{
+    font-size: 55px;
+    letter-spacing: 0px;
+    font-weight: 900;
+    color: white;
+}
+.tallCardH3{
+    font-size: 45px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: white;
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+  .BigCard {
+      width: 45%; /* تعديل العرض */
+      height: auto; /* جعل الارتفاع تلقائي */
+      padding-top: 80px; /* تقليل الحشو العلوي */
+      padding-left: 40px; /* تقليل الحشو الأيسر */
+      padding-right: 40px; /* تقليل الحشو الأيمن */
+      transform: translateX(0); /* إزالة الترجمة */
+  }
+
+  .shopNow {
+      height: 70px !important; /* تقليل الارتفاع */
+      font-size: 22px !important; /* تقليل حجم الخط */
+      padding: 0px 30px !important; /* تقليل الحشو */
+      margin-top: 80px !important; /* تقليل الهامش العلوي */
+  }
+
+  .tallCardH1 {
+      font-size: 45px; /* تقليل حجم الخط */
+  }
+
+  .tallCardH3 {
+      font-size: 35px; /* تقليل حجم الخط */
+  }
+}
+
+@media (max-width: 768px) {
+  .BigCard {
+      width: 90%; /* جعل العرض أكبر */
+      height: 600px; /* جعل الارتفاع تلقائي */
+      padding-top: 60px; /* تقليل الحشو العلوي */
+      margin-top: 200px;
+      padding-left: 20px; /* تقليل الحشو الأيسر */
+      padding-right: 20px; /* تقليل الحشو الأيمن */
+      margin-bottom: 20px; /* تقليل الهامش السفلي */
+  }
+
+  .shopNow {
+      height: 60px !important; /* تقليل الارتفاع أكثر */
+      font-size: 20px !important; /* تقليل حجم الخط أكثر */
+      padding: 0px 20px !important; /* تقليل الحشو أكثر */
+      margin-top: 60px !important; /* تقليل الهامش العلوي أكثر */
+  }
+
+  .tallCardH1 {
+      font-size: 40px; /* تقليل حجم الخط أكثر */
+  }
+
+  .tallCardH3 {
+      font-size: 30px; /* تقليل حجم الخط أكثر */
+  }
+}
+
+@media (max-width: 480px) {
+  .BigCard {
+      width: 100%; /* جعل العرض كامل */
+      height: auto; /* جعل الارتفاع تلقائي */
+      padding-top: 40px; /* تقليل الحشو العلوي أكثر */
+      padding-left: 10px; /* تقليل الحشو الأيسر أكثر */
+      padding-right: 10px; /* تقليل الحشو الأيمن أكثر */
+      margin-bottom: 10px; /* تقليل الهامش السفلي أكثر */
+  }
+
+  .shopNow {
+      height: 50px !important; /* تقليل الارتفاع أكثر */
+      font-size: 18px !important; /* تقليل حجم الخط أكثر */
+      padding: 0px 10px !important; /* تقليل الحشو أكثر */
+      margin-top: 40px !important; /* تقليل الهامش العلوي أكثر */
+  }
+
+  .tallCardH1 {
+      font-size: 35px; /* تقليل حجم الخط أكثر */
+  }
+
+  .tallCardH3 {
+      font-size: 25px; /* تقليل حجم الخط أكثر */
+  }
+}

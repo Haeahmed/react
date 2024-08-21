@@ -1,0 +1,516 @@
+/* .Footer{
+    margin-top: 300px;
+    position: relative;
+    height: 118vh;
+    background-color: #122d40;
+    border-radius: 70px 70px 0px 0px;
+}
+.topFooter{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C3E56;
+    background-image: url(https://xtratheme.com/elementor/supermarket/wp-content/uploads/sites/106/2023/04/bg-subscribe.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    margin: auto;
+    height: 300px;
+    padding-right: 100px;
+    padding: 0px 80px;
+    position: absolute; 
+    top: -170px;
+    left: 50px;
+}
+.flexInput{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    height: 90px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 90px;
+}
+.flexInput input{
+    border: none;
+    width: 95%;
+    border-radius: 90px;
+    height: 100%;
+    color: #1C3E56;
+    font-size: 30px;
+    font-weight: 400;
+    outline: none;
+    padding-left: 50px;
+}
+.flexInput input::placeholder{
+    color: #6b6969;
+    font-size: 20px;
+    font-weight: 900;
+}
+.buttonSubscribe{
+    width: 350px !important;
+    height: 70px !important;
+    padding: 0px !important;
+    padding-left: 40px !important;
+    margin: 60px;
+}
+.middleFooter{
+    width: 100%;
+    height: 100vh;
+    background-color: #122d40;
+    border-radius: 70px 70px 0px 0px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding-top: 200px;
+    padding-left: 100px;
+}
+.square{
+    width: 30%;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid  rgba(159, 182, 203, 0.2);
+    border-radius: 40px;
+    padding: 80px;
+    text-align: left;
+    margin-bottom: 180px;
+    margin-top: 200px;
+}
+.square img{
+    width: 290px;
+    height: 100px;
+}
+.socialIcons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 70px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.socialIcons .soIcon{
+    background-color: #1C3E56;
+    border-radius: 50%;
+    padding: 15px;
+}
+.square h3{
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffff;
+}
+.square h1{
+    color: white;
+}
+.square:nth-child(2) span{
+    width: 90%;
+    height: 0.5px;
+    background-color: #555454;
+}
+.square:last-child{
+    text-align: center;
+}
+.buttonThreeSquare{
+    width: 300px !important;
+    height: 80px !important;
+    padding: 0px !important;
+    padding-left: 40px !important;
+    transition: all 0.5s ease-in-out;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center !important;
+    color: #122d40;
+}
+.buttonThreeSquare:hover{
+    background-color: white !important;
+    color: #122d40;
+}
+.square h4{
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(206, 228, 250, 0.2);
+}
+.bottomFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    height: 70px;
+    background-color: #122d40;
+    border-radius: 50px 50px 0px 0px;
+    border: 2px solid rgba(159, 182, 203, 0.2);
+    padding-left: 50px;
+    padding: 50px;
+    margin: auto;
+    position: absolute;
+    left: 69px;
+    bottom: 0px;
+
+}
+.bottomFooter h3{
+    font-size: 25px;
+    color: #a1a1a1;
+}
+ */
+
+ /* التصميم الأساسي */
+.Footer {
+    margin-top: 300px;
+    position: relative;
+    height: 118vh;
+    background-color: #122d40;
+    border-radius: 70px 70px 0px 0px;
+}
+.topFooter {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C3E56;
+    background-image: url(https://xtratheme.com/elementor/supermarket/wp-content/uploads/sites/106/2023/04/bg-subscribe.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    margin: auto;
+    height: 300px;
+    padding: 0px 80px;
+    position: absolute; 
+    top: -170px;
+    left: 50px;
+}
+.flexInput {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    height: 90px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 90px;
+}
+.flexInput input {
+    border: none;
+    width: 95%;
+    border-radius: 90px;
+    height: 100%;
+    color: #1C3E56;
+    font-size: 30px;
+    font-weight: 400;
+    outline: none;
+    padding-left: 50px;
+}
+.flexInput input::placeholder {
+    color: #6b6969;
+    font-size: 20px;
+    font-weight: 900;
+}
+.buttonSubscribe {
+    width: 350px !important;
+    height: 70px !important;
+    padding-left: 40px !important;
+    margin: 60px;
+}
+.middleFooter {
+    width: 100%;
+    height: 100vh;
+    background-color: #122d40;
+    border-radius: 70px 70px 0px 0px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding-top: 200px;
+    padding-left: 100px;
+}
+.square {
+    width: 30%;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid rgba(159, 182, 203, 0.2);
+    border-radius: 40px;
+    padding: 80px;
+    text-align: left;
+    margin-bottom: 180px;
+    margin-top: 200px;
+}
+.square img {
+    width: 290px;
+    height: 100px;
+}
+.socialIcons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 70px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.socialIcons .soIcon {
+    background-color: #1C3E56;
+    border-radius: 50%;
+    padding: 15px;
+}
+.square h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffff;
+}
+.square h1 {
+    color: white;
+}
+.square:nth-child(2) span {
+    width: 90%;
+    height: 0.5px;
+    background-color: #555454;
+}
+.square:last-child {
+    text-align: center;
+}
+.buttonThreeSquare {
+    width: 300px !important;
+    height: 80px !important;
+    padding-left: 40px !important;
+    transition: all 0.5s ease-in-out;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center !important;
+    color: #122d40;
+}
+.buttonThreeSquare:hover {
+    background-color: white !important;
+    color: #122d40;
+}
+.square h4 {
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(206, 228, 250, 0.2);
+}
+.bottomFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    height: 70px;
+    background-color: #122d40;
+    border-radius: 50px 50px 0px 0px;
+    border: 2px solid rgba(159, 182, 203, 0.2);
+    padding-left: 50px;
+    padding: 50px;
+    margin: auto;
+    position: absolute;
+    left: 69px;
+    bottom: 0px;
+}
+.bottomFooter h3 {
+    font-size: 25px;
+    color: #a1a1a1;
+}
+
+/* التصميم المتجاوب */
+
+/* الشاشات المتوسطة (الأجهزة اللوحية) */
+@media (min-width: 992px){
+    .Footer {
+        margin-top: 300px;
+        position: relative;
+        width: 100%;
+        height: 118vh;
+        background-color: #122d40;
+        border-radius: 70px 70px 0px 0px;
+    }
+    .topFooter {
+        flex-direction: column;
+        height: 300px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: -101px;
+    }
+
+    .flexInput {
+        width: 92%;
+        height: 88px;
+        position: absolute;
+        margin-top: 17px;
+        top: 142px;
+    }
+    .buttonSubscribe {
+        width: 350px !important;
+        height: 35px !important;
+        padding-left: 20px !important;
+        margin: 60px;
+    }
+
+    .middleFooter {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+        height: auto;
+    }
+
+    .square {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .bottomFooter {
+        display: none;
+    }
+
+    .bottomFooter h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .bottomFooter img{
+        display: none;
+    }
+    .footerMenu a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+
+/* الشاشات الصغيرة (الهواتف المحمولة) */
+@media screen and (max-width: 760px)  {
+    .Footer {
+        margin-top: 300px;
+        position: relative;
+        height: 118vh;
+        width: 106vw;
+        background-color: #122d40;
+        border-radius: 70px 70px 0px 0px;
+    }
+    .topFooter {
+        flex-direction: column;
+        height: 300px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: -101px;
+    }
+
+    .flexInput {
+        width: 92%;
+        height: 88px;
+        position: absolute;
+        margin-top: 17px;
+        top: 142px;
+    }
+    .buttonSubscribe {
+        width: 350px !important;
+        height: 35px !important;
+        padding-left: 20px !important;
+        margin: 60px;
+    }
+
+    .middleFooter {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+        height: auto;
+    }
+
+    .square {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .bottomFooter {
+        display: none;
+    }
+
+    .bottomFooter h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .bottomFooter img{
+        display: none;
+    }
+    .footerMenu a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px)  {
+    .Footer {
+        margin-top: 300px;
+        position: relative;
+        width: 100%;
+        height: 118vh;
+        background-color: #122d40;
+        border-radius: 70px 70px 0px 0px;
+    }
+    .topFooter {
+        flex-direction: column;
+        height: 300px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: -101px;
+    }
+
+    .flexInput {
+        width: 92%;
+        height: 88px;
+        position: absolute;
+        margin-top: 17px;
+        top: 142px;
+    }
+    .buttonSubscribe {
+        width: 350px !important;
+        height: 35px !important;
+        padding-left: 20px !important;
+        margin: 60px;
+    }
+
+    .middleFooter {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+        height: auto;
+    }
+
+    .square {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .bottomFooter {
+        display: none;
+    }
+
+    .bottomFooter h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .bottomFooter img{
+        display: none;
+    }
+    .footerMenu a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}

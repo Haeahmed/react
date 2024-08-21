@@ -1,0 +1,149 @@
+.ItSelectedList{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    min-height: 300px;
+    z-index: 376;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    border-radius: 30px;
+    top: 0;
+    transform: translate(420px, 210px);
+    transition: all 1.5s ease-in-out;
+}
+
+.bottomField{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.details{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #e6e4e4;
+}
+.details h3{
+    font-size: 20px !important;
+}
+.details:first-child{
+    border-radius: 0px 0px 0px 20px;
+}
+.details:last-child{
+    border-radius: 0px 0px 20px 0px;
+}
+.cartIcon,
+.coinIcon{
+    font-size: 20px;
+}
+.FooterList{
+    width: 100%;
+    height: 80px;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: #01e281;
+    padding-top: 10px;
+    color: #173850;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+}
+.after{
+    position: absolute;
+    top: -36px;
+    right: 20px;
+    font-size: 40px;
+    color: #01e281;
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+    .ItSelectedList {
+        width: 80%; /* تغيير العرض ليكون أكثر مرونة */
+        transform: translate(20px, 210px); /* تعديل الموضع */
+        padding: 15px; /* تقليل الحشو */
+    }
+
+    .details {
+        width: 100%; /* جعل التفاصيل تأخذ العرض الكامل */
+        padding-left: 15px; /* تقليل الحشو الداخلي */
+    }
+
+    .details h3 {
+        font-size: 18px; /* تقليل حجم الخط */
+    }
+
+    .cartIcon,
+    .coinIcon {
+        font-size: 18px; /* تقليل حجم الأيقونات */
+    }
+}
+
+@media (max-width: 768px) {
+    .ItSelectedList {
+        width: 90%; /* تغيير العرض ليكون أكثر مرونة */
+        transform: translate(10px, 150px); /* تعديل الموضع */
+        min-height: auto; /* السماح للارتفاع بالتكيف */
+        padding: 10px; /* تقليل الحشو */
+    }
+
+    .bottomField {
+        height: auto; /* السماح للارتفاع بالتكيف */
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+    }
+
+    .details {
+        width: 100%; /* جعل التفاصيل تأخذ العرض الكامل */
+        padding-left: 10px; /* تقليل الحشو الداخلي */
+        justify-content: flex-start; /* محاذاة العناصر إلى اليسار */
+    }
+
+    .details h3 {
+        font-size: 16px; /* تقليل حجم الخط أكثر */
+    }
+
+    .FooterList {
+        height: auto; /* السماح للارتفاع بالتكيف */
+        font-size: 14px; /* تقليل حجم الخط */
+    }
+
+    .after {
+        font-size: 30px; /* تقليل حجم الأيقونة */
+        right: 10px; /* تعديل الموضع */
+    }
+}
+
+@media (max-width: 480px) {
+    .ItSelectedList {
+        width: 95%; /* تغيير العرض ليكون أكثر مرونة */
+        transform: translate(5px, 100px); /* تعديل الموضع أكثر */
+        padding: 5px; /* تقليل الحشو أكثر */
+    }
+
+    .bottomField {
+        height: auto; /* السماح للارتفاع بالتكيف */
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+    }
+
+    .details {
+        padding-left: 5px; /* تقليل الحشو الداخلي أكثر */
+        justify-content: flex-start; /* محاذاة العناصر إلى اليسار */
+    }
+
+    .details h3 {
+        font-size: 14px; /* تقليل حجم الخط أكثر */
+    }
+
+    .FooterList {
+        height: auto; /* السماح للارتفاع بالتكيف */
+        font-size: 12px; /* تقليل حجم الخط أكثر */
+    }
+
+    .after {
+        font-size: 24px; /* تقليل حجم الأيقونة أكثر */
+        right: 5px; /* تعديل الموضع أكثر */
+    }
+}

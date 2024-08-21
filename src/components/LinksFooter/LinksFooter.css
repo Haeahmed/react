@@ -1,0 +1,57 @@
+.linkFooter{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 25px;
+    color: white;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.linkFooter:hover{
+    transform: translateX(10px);
+    color: #01e281;
+}
+.linkFooter .iconLink{
+    color: #01e281;
+    border-radius: 50%;
+    font-size: 50px;
+    padding: 10px;
+    background-color: #1C3E56;
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+    .linkFooter {
+        font-size: 22px; /* تقليل حجم الخط */
+        gap: 10px; /* تقليل الفجوة بين العناصر */
+    }
+
+    .linkFooter .iconLink {
+        font-size: 45px; /* تقليل حجم الأيقونة */
+        padding: 8px; /* تقليل الحشو */
+    }
+}
+
+@media (max-width: 768px) {
+    .linkFooter {
+        font-size: 20px; /* تقليل حجم الخط أكثر */
+        gap: 8px; /* تقليل الفجوة بين العناصر */
+    }
+
+    .linkFooter .iconLink {
+        font-size: 40px; /* تقليل حجم الأيقونة */
+        padding: 6px; /* تقليل الحشو */
+    }
+}
+
+@media (max-width: 480px) {
+    .linkFooter {
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+        font-size: 18px; /* تقليل حجم الخط أكثر */
+        gap: 5px; /* تقليل الفجوة بين العناصر */
+    }
+
+    .linkFooter .iconLink {
+        font-size: 35px; /* تقليل حجم الأيقونة */
+        padding: 5px; /* تقليل الحشو */
+    }
+}

@@ -1,0 +1,19 @@
+.recentReview{
+    width: 95%;
+    height: 100px;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 0.5px solid #d4d3d3;
+}
+.recentReview img{
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    border-radius: 20px;
+}
+.recentReview .star{
+    font-size: 20px;
+}

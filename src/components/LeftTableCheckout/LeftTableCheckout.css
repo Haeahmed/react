@@ -1,0 +1,90 @@
+.LeftTableCheckout{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 10px;
+    padding-top: 30px;
+    background-color: #f1f2f6;
+    width: 50%;
+    margin: 100px;
+    border-radius: 40px;
+    margin-left: 50px !important;
+    flex-direction: column;
+}
+
+.bigLabel{
+    display: flex;
+    align-items: center;
+    color: #7a7a7a;
+    transform: translate(30px, 23px) !important;
+    margin-bottom: 40px;
+    font-weight: 900;
+    width: 286px !important;
+}
+.textArea{
+    border: 1px solid #d1d0d0;
+    border-radius: 40px;
+    padding: 30px;
+    margin-bottom: 50px;
+    
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .LeftTableCheckout {
+        width: 70%; /* تغيير العرض ليكون أكثر مرونة */
+        margin: 50px auto; /* تعديل الهوامش */
+        padding: 20px; /* تقليل الحشو */
+    }
+
+    .bigLabel {
+        width: auto; /* السماح للعرض بالتكيف */
+        transform: translate(20px, 20px) !important; /* تعديل الموضع */
+        margin-bottom: 30px; /* تقليل الهامش السفلي */
+    }
+
+    .textArea {
+        padding: 20px; /* تقليل الحشو الداخلي */
+        margin-bottom: 40px; /* تقليل الهامش السفلي */
+    }
+}
+
+@media (max-width: 768px) {
+    .LeftTableCheckout {
+        width: 90%; /* تغيير العرض ليكون أكثر مرونة */
+        margin: 30px auto; /* تعديل الهوامش */
+        padding: 15px; /* تقليل الحشو */
+        gap: 40px; /* تقليل الفجوة بين العناصر */
+    }
+
+    .bigLabel {
+        transform: translate(10px, 15px) !important; /* تعديل الموضع */
+        margin-bottom: 20px; /* تقليل الهامش السفلي */
+        font-size: 18px; /* تقليل حجم الخط */
+    }
+
+    .textArea {
+        padding: 15px; /* تقليل الحشو الداخلي */
+        margin-bottom: 30px; /* تقليل الهامش السفلي */
+    }
+}
+
+@media (max-width: 480px) {
+    .LeftTableCheckout {
+        width: 95%; /* تغيير العرض ليكون أكثر مرونة */
+        margin: 20px auto; /* تعديل الهوامش */
+        padding: 10px; /* تقليل الحشو */
+        gap: 20px; /* تقليل الفجوة بين العناصر */
+    }
+
+    .bigLabel {
+        transform: translate(5px, 10px) !important; /* تعديل الموضع */
+        margin-bottom: 15px; /* تقليل الهامش السفلي */
+        font-size: 16px; /* تقليل حجم الخط أكثر */
+    }
+
+    .textArea {
+        padding: 10px; /* تقليل الحشو الداخلي */
+        margin-bottom: 20px; /* تقليل الهامش السفلي */
+    }
+}

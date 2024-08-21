@@ -1,0 +1,101 @@
+.input{
+    border: none;
+    border-radius: 30px;
+    width: 380px;
+    font-size: 25px;
+    transform: translateX(-57px);
+    height: 71px;
+    padding-left: 30px;
+}
+.input:focus{
+    outline: 1px solid #01e281;
+}
+.label{
+    display: flex;
+    align-items: center;
+    color: #7a7a7a;
+    transform: translate(120px,-60px);
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 900;
+    width: 135px;
+}
+.label span{
+    color: red;
+    font-size: 20px;
+    font-weight: 900;
+}
+::placeholder{
+    color: #7a7a7a;
+    font-size: 25px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+.hr{
+    width: 150%;
+    opacity: 0.5;
+}
+.paragreph{
+    font-size: 25px;
+}
+
+/* Media Queries */
+@media (min-width: 992px) and (max-width: 1980px) {
+    .input {
+        width: 300px; /* تقليل عرض المدخل */
+        font-size: 22px; /* تقليل حجم الخط */
+        height: 60px; /* تقليل ارتفاع المدخل */
+        padding-left: 20px; /* تقليل الحشو الداخلي */
+        transform: translateX(-40px); /* تعديل التحويل */
+    }
+
+    .label {
+        font-size: 18px; /* تقليل حجم خط التسمية */
+        transform: translate(100px, -50px); /* تعديل التحويل */
+        margin-bottom: 30px; /* تقليل المسافة السفلية */
+    }
+
+    .paragreph {
+        font-size: 22px; /* تقليل حجم الخط في الفقرة */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .input {
+        width: 200px; /* عرض أصغر للمدخل */
+        font-size: 18px; /* تقليل حجم الخط أكثر */
+        height: 50px; /* تقليل ارتفاع المدخل أكثر */
+        padding-left: 10px; /* تقليل الحشو الداخلي أكثر */
+        transform: translateX(0); /* إزالة التحويل */
+    }
+
+    .label {
+        font-size: 14px;
+        transform: translate(-119px, 23px);
+        margin-bottom: 15px;
+    }
+
+    .paragreph {
+        font-size: 18px; /* تقليل حجم الخط في الفقرة أكثر */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .input {
+        width: 200px; /* عرض أصغر للمدخل */
+        font-size: 18px; /* تقليل حجم الخط أكثر */
+        height: 50px; /* تقليل ارتفاع المدخل أكثر */
+        padding-left: 10px; /* تقليل الحشو الداخلي أكثر */
+        transform: translateX(0); /* إزالة التحويل */
+    }
+
+    .label {
+        font-size: 14px;
+        transform: translate(-119px, 23px);
+        margin-bottom: 15px;
+    }
+
+    .paragreph {
+        font-size: 18px; /* تقليل حجم الخط في الفقرة أكثر */
+    }
+}

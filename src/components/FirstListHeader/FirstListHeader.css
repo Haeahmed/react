@@ -1,0 +1,55 @@
+.listCards{
+    width: 93%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 90px;
+    gap: 70px;
+    background-color: #122d40;
+    border-radius: 30px;
+    position: absolute;
+    top: 160px;
+    z-index: 8765435;
+    transition: all 0.6s ease-in-out;
+    transform: translateY(-60px);
+  }
+  
+/* Media Queries */
+@media (max-width: 1200px) {
+  .listCards {
+      width: 90%; /* تقليل العرض */
+      height: auto; /* جعل الارتفاع تلقائي */
+      padding-left: 60px; /* تقليل الحشو الأيسر */
+      gap: 50px; /* تقليل الفجوة */
+      top: 140px; /* تقليل المسافة العلوية */
+  }
+}
+
+@media (max-width: 768px) {
+  .listCards {
+      width: 100%; /* جعل العرض أكبر */
+      height: auto; /* جعل الارتفاع تلقائي */
+      padding-left: 30px; /* تقليل الحشو الأيسر أكثر */
+      gap: 30px; /* تقليل الفجوة أكثر */
+      background-color: #122d40;
+      padding-top: 100px;
+      top: 120px; /* تقليل المسافة العلوية أكثر */
+      flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+      align-items: flex-start; /* محاذاة العناصر إلى اليسار */
+  }
+}
+
+@media (max-width: 480px) {
+  .listCards {
+    width: 369px; /* جعل العرض كامل */
+      height: 900px; /* جعل الارتفاع تلقائي */
+      top: 100px; /* تقليل المسافة العلوية أكثر */
+      display: flex;
+      align-items: center;
+      padding-top: 30px;
+      flex-wrap: wrap;
+      background-color: #122d40;
+      transform: translateY(-40px); /* تعديل التحويل */
+      z-index: 87654345;
+  }
+}

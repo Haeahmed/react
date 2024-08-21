@@ -1,0 +1,120 @@
+.cardProducts{
+    width: 250px;
+    height: 350px;
+    border: 2px solid rgba(151, 150, 150, 0.15);
+    border-radius: 40px;
+    text-align: center;
+    padding: 50px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    gap: 30px;
+    font-size: 15px;
+    transition: all 0.7s;
+    font-weight: 800;
+}
+.cardProducts img{
+    transition: all .7s ease-in-out;
+}
+.cardProducts:hover{
+    box-shadow: 2px 2px 28px 5px silver;
+    transform: translateY(-20px);
+    border: 2px solid #01e281;
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+    .imgPerson {
+        width: 350px; /* تقليل العرض */
+        height: auto; /* جعل الارتفاع تلقائي */
+    }
+
+    .shadow {
+        font-size: 50px; /* تقليل حجم الخط */
+        padding-top: 120px; /* تعديل الحشو العلوي */
+    }
+
+    .description {
+        font-size: 28px; /* تقليل حجم الخط */
+    }
+
+    .topPhotoPerson {
+        width: 120px; /* تقليل العرض */
+        height: 40px; /* تقليل الارتفاع */
+        font-size: 18px; /* تقليل حجم الخط */
+        transform: translate(120px, 30px); /* تعديل الترجمة */
+    }
+}
+
+@media (max-width: 768px) {
+    .imgPerson {
+        width: 80%; /* جعل العرض أكبر */
+        height: auto; /* جعل الارتفاع تلقائي */
+        margin-bottom: 20px; /* إضافة هامش سفلي */
+    }
+
+    .shadow {
+        font-size: 40px; /* تقليل حجم الخط أكثر */
+        padding-top: 100px; /* تعديل الحشو العلوي أكثر */
+    }
+
+    .description {
+        font-size: 14px; /* تقليل حجم الخط أكثر */
+    }
+
+    .topPhotoPerson {
+        width: 100px; /* تقليل العرض أكثر */
+        height: 35px; /* تقليل الارتفاع أكثر */
+        font-size: 16px; /* تقليل حجم الخط أكثر */
+        transform: translate(100px, 20px); /* تعديل الترجمة أكثر */
+    }
+}
+
+@media (max-width: 480px) {
+    .cardProducts{
+        width: 150px !important;
+        height: 250px !important;
+        border: 2px solid rgba(151, 150, 150, 0.15);
+        border-radius: 40px;
+        text-align: center;
+        padding: 50px 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        gap: 10px;
+        font-size: 15px;
+        transition: all 0.7s;
+        font-weight: 800;
+    }
+    .h1Card{
+        font-size: 20px;
+    }
+    .h4Card{
+        font-size: 15px !important;
+    }
+    .flexCardProd{
+        gap: 10px !important;
+    }
+    .imgPerson {
+        width: 100%; /* جعل العرض كامل */
+        height: auto; /* جعل الارتفاع تلقائي */
+        margin-bottom: 10px; /* تقليل الهامش السفلي أكثر */
+    }
+
+    .shadow {
+        font-size: 30px; /* تقليل حجم الخط أكثر */
+        padding-top: 80px; /* تعديل الحشو العلوي أكثر */
+    }
+
+    .description {
+        font-size: 20px; /* تقليل حجم الخط أكثر */
+    }
+
+    .topPhotoPerson {
+        width: 80px; /* تقليل العرض أكثر */
+        height: 30px; /* تقليل الارتفاع أكثر */
+        font-size: 14px; /* تقليل حجم الخط أكثر */
+        transform: translate(80px, 10px); /* تعديل الترجمة أكثر */
+    }
+}

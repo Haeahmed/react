@@ -1,0 +1,137 @@
+.listHeader{
+    width: 900px;
+    height: 400px;
+    background-color: #122d40;
+    position: absolute;
+    top: 100px;
+    margin-left: 600px;
+    z-index: 87654;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 50px;
+    border-radius: 20px;
+    gap: 56px;
+    transition: all 0.2s ease-in-out;
+  }
+  .list ul{
+    list-style: none;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  .list ul:hover{
+    color: #555555 !important;
+  }
+  .list ul li{
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    width: 127%;
+    transform: translateX(-40px);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .list ul li:hover{
+    color: #01e281 !important;
+  }
+  .iconList{
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: #837f7f !important;
+  }
+  .listHeader .list{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 5px;
+  }
+  .list h1{
+    color: #01e281;
+    font-size: 25px;
+    font-weight: 900;
+    width: 189px;
+    transform: translateX(-30px);
+  }
+  .Bigline{
+    width: 1px;
+    height: 300px;
+    background-color: #555555;
+  }
+
+  /* Media Queries */
+@media (max-width: 1200px) {
+  .listHeader {
+      width: 80%; /* زيادة العرض في الشاشات الأصغر */
+      height: auto; /* جعل الارتفاع تلقائي */
+      padding-left: 20px; /* تقليل الحشو الأيسر */
+      gap: 20px; /* تقليل الفجوة بين العناصر */
+      top: 50px; /* تقليل المسافة العلوية */
+  }
+
+  .list h1 {
+      font-size: 22px; /* تقليل حجم الخط */
+      transform: translateX(0); /* إزالة التحويل */
+  }
+
+  .list ul li {
+      font-size: 18px; /* تقليل حجم الخط */
+      transform: translateX(0); /* إزالة التحويل */
+      width: auto; /* جعل العرض تلقائي */
+  }
+
+  .iconList {
+      font-size: 24px; /* تقليل حجم الأيقونة */
+  }
+}
+
+@media (max-width: 768px) {
+  .listHeader {
+      width: 95%; /* زيادة العرض في الشاشات الأصغر */
+      height: auto; /* جعل الارتفاع تلقائي */
+      padding-left: 10px; /* تقليل الحشو الأيسر */
+      gap: 15px; /* تقليل الفجوة بين العناصر */
+      top: 30px; /* تقليل المسافة العلوية */
+  }
+
+  .list h1 {
+      font-size: 20px; /* تقليل حجم الخط أكثر */
+      transform: translateX(0); /* إزالة التحويل */
+  }
+
+  .list ul li {
+      font-size: 16px; /* تقليل حجم الخط أكثر */
+      transform: translateX(0); /* إزالة التحويل */
+      width: auto; /* جعل العرض تلقائي */
+  }
+
+  .iconList {
+      font-size: 22px; /* تقليل حجم الأيقونة */
+  }
+}
+
+@media (max-width: 480px) {
+  .listHeader {
+      width: 100%; /* عرض كامل في الشاشات الأصغر */
+      height: auto; /* جعل الارتفاع تلقائي */
+      padding-left: 5px; /* تقليل الحشو الأيسر */
+      gap: 10px; /* تقليل الفجوة بين العناصر */
+      top: 20px; /* تقليل المسافة العلوية */
+  }
+
+  .list h1 {
+      font-size: 18px; /* تقليل حجم الخط أكثر */
+      transform: translateX(0); /* إزالة التحويل */
+  }
+
+  .list ul li {
+      font-size: 14px; /* تقليل حجم الخط أكثر */
+      transform: translateX(0); /* إزالة التحويل */
+      width: auto; /* جعل العرض تلقائي */
+  }
+
+  .iconList {
+      font-size: 20px; /* تقليل حجم الأيقونة */
+  }
+}

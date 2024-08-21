@@ -1,9 +1,32 @@
-import './App.css';
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./Pages/Home/Home";
+import Footer from "./sections/Footer/Footer";
+import Header from "./sections/Header/Header";
+import Checkout from "./Pages/Checkout/Checkout";
+import Cart from "./Pages/Cart/Cart";
+import Contact from "./Pages/Contact/Contact";
+import Shop from "./Pages/Shop/Shop";
+import { ContextProd } from "./Context/Context";
+import { ContextSelected } from "./Context/ContextItemSelected";
 function App() {
   return (
-    <h1>hello</h1>
-  )
+    <ContextProd>
+    <ContextSelected>
+    <Router>
+        <Header />
+        <Routes>
+          <Route path="/react" element={<Home />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/shop" element={<Shop />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </ContextSelected>
+    </ContextProd>
+  );
 }
 
 export default App;

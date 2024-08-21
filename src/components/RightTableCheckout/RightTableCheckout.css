@@ -1,0 +1,159 @@
+.RightTableCheckout{
+    width: 40%;
+    height: 150vh;
+    background-color: #f1f2f6;
+    padding: 30px;
+    border-radius: 40px;
+    position: sticky;
+    top: 0;
+    transform: translateY(-560px);
+
+}
+table{
+    width: 90%;
+    height: 447px;
+    margin: 45px;
+}
+thead td{
+    border: 0.5px solid #d8d8d8;
+    margin: 4px;
+    background-color: #d8d8d8;
+    font-size: 30px;
+    font-weight: 900;
+}
+td{
+    border: 0.5px solid #d8d8d8;
+    margin: 6px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 5px;
+}
+.squareText{
+    width: 90%;
+    min-height: 750px;
+    margin: auto;
+    border: 0.5px solid #d8d8d8;
+}
+.textTable{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 50px;
+    background-color: #d6d6d6;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 600px;
+    padding-left: 80px;
+    height: 500px;
+    position: relative;
+}
+hr{
+    margin-top: 30px;
+    opacity: 0.6;
+}
+.buttonText{
+    width: 600px;
+    height: 80px;
+    padding: 0px 30px !important;
+    padding-left: 220px !important;
+    font-size: 25px !important;
+    font-weight: 900;
+    margin-right: 120px !important;
+    margin-top: 50px !important;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .RightTableCheckout {
+        width: 60%; /* زيادة العرض في الشاشات الأصغر */
+        padding: 20px; /* تقليل الحشو */
+        height: auto; /* جعل الارتفاع تلقائي */
+    }
+
+    .textTable {
+        width: 100%; /* عرض كامل */
+        padding-left: 20px; /* تقليل الحشو الأيسر */
+        height: auto; /* جعل الارتفاع تلقائي */
+        margin-left: 0; /* إزالة الهامش الأيسر */
+        margin-top: 30px; /* تقليل الهامش العلوي */
+    }
+
+    .buttonText {
+        width: calc(100% - 60px); /* عرض كامل مع تقليل الهامش */
+        padding-left: 20px; /* تقليل الحشو الأيسر */
+        margin-right: 0; /* إزالة الهامش الأيمن */
+        margin-top: 30px; /* تقليل الهامش العلوي */
+    }
+}
+
+@media (max-width: 768px) {
+    .RightTableCheckout {
+        width: 80%; /* زيادة العرض في الشاشات الأصغر */
+        padding: 15px; /* تقليل الحشو */
+        height: auto; /* جعل الارتفاع تلقائي */
+    }
+
+    table {
+        width: 100%; /* عرض كامل */
+        margin: 20px; /* تقليل الهامش */
+    }
+
+    thead td {
+        font-size: 24px; /* تقليل حجم الخط */
+    }
+
+    td {
+        font-size: 20px; /* تقليل حجم الخط */
+        padding-left: 2px; /* تقليل الحشو */
+    }
+
+    .textTable {
+        width: calc(100% - 40px); /* عرض كامل مع تقليل الهامش */
+        padding-left: 15px; /* تقليل الحشو الأيسر */
+        height: auto; /* جعل الارتفاع تلقائي */
+        margin-left: 0; /* إزالة الهامش الأيسر */
+        margin-top: 20px; /* تقليل الهامش العلوي */
+    }
+
+    .buttonText {
+        width: calc(100% - 40px); /* عرض كامل مع تقليل الهامش */
+        padding-left: 10px; /* تقليل الحشو الأيسر */
+        font-size: 20px; /* تقليل حجم الخط */
+        margin-top: 20px; /* تقليل الهامش العلوي */
+    }
+}
+
+@media (max-width: 480px) {
+    .RightTableCheckout {
+        width: 95%; /* زيادة العرض في الشاشات الأصغر */
+        padding: 10px; /* تقليل الحشو */
+        height: auto; /* جعل الارتفاع تلقائي */
+    }
+
+    table {
+        width: 100%; /* عرض كامل */
+        margin: 10px; /* تقليل الهامش */
+    }
+
+    thead td {
+        font-size: 20px; /* تقليل حجم الخط أكثر */
+    }
+
+    td {
+        font-size: 18px; /* تقليل حجم الخط أكثر */
+        padding-left: 2px; /* تقليل الحشو */
+    }
+
+    .textTable {
+        width: calc(100% - 20px); /* عرض كامل مع تقليل الهامش */
+        padding-left: 10px; /* تقليل الحشو الأيسر */
+        height: auto; /* جعل الارتفاع تلقائي */
+        margin-left: 0; /* إزالة الهامش الأيسر */
+        margin-top: 10px; /* تقليل الهامش العلوي */
+    }
+
+    .buttonText {
+        width: calc(100% - 20px); /* عرض كامل مع تقليل الهامش */
+        padding-left: 5px; /* تقليل الحشو الأيسر */
+        font-size: 18px; /* تقليل حجم الخط أكثر */
+        margin-top: 10px; 
+    }}
