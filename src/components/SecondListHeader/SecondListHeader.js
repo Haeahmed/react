@@ -31,7 +31,7 @@ export default function SecondListHeader(props) {
           })}
         </ul>
       </Flex>
-      <span className="Bigline"></span>
+      <span className="BigLine"></span>
       <Flex className={"list"}>
         <h1>Top Tags</h1>
         <ul>

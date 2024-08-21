@@ -3,7 +3,7 @@ import "./Flex.css";
 export default function Flex(props) {
   return (
     <div
-    key={props.key}
+    id={props.key}
     onMouseOver={props.onMouseOver}
     onMouseLeave={props.onMouseLeave}
       className={`${props.className}`}
