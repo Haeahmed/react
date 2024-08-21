@@ -149,7 +149,7 @@
   }
   
   /* الشاشات المتوسطة (الأجهزة اللوحية) */
-  @media (min-width: 992px) and (max-width: 1980px) {
+  @media (min-width: 992px) and (max-width: 1023px) {
     .contact {
       gap: 30px;
     }

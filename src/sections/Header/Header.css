@@ -555,7 +555,7 @@
         position: relative;
     }
 }
-@media (min-width: 992px) and (max-width: 1980px){
+@media (min-width: 992px) and (max-width: 1023px){
     .Header{
         min-width: 100%;
         min-height: 186px;
@@ -716,5 +716,20 @@
         color: white;
         border-radius: 40px 40px 0px 0px;
         transition: all 0.3s ease-in-out;
+    }
+}
+@media (min-width: 1024px){
+    .threeSectionHeader{
+        background-color: #173850;
+        width: 95%;
+        height: 100px;
+        position: absolute;
+        top: 280px;
+        padding: 70px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 100px;
     }
 }
