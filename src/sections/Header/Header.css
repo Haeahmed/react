@@ -433,7 +433,7 @@
         top: 150px;
         right: 0;
         padding: 70px;
-        display: none;
+        display: flex;
         transition: all 0.5s ease-in-out;
         flex-direction: column;
         z-index: 78765499965;
@@ -600,7 +600,7 @@
         top: 150px;
         right: 0;
         padding: 70px;
-        display: none;
+        display: flex;
         transition: all 0.5s ease-in-out;
         flex-direction: column;
         z-index: 78765499965;

@@ -1,37 +1,18 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './Shop.css'
 import HeadInnerPages from '../../components/HeadInnerPages/HeadInnerPages'
 import Flex from '../../components/Flex/Flex'
 import TopBarBox from '../../components/TopBarBox/TopBarBox'
-import Input from '../../components/Input/Input'
-import { Burgers, Category, Products, recentReviews, Souce, TopTags } from '../../data'
+import { Category, Products, recentReviews, TopTags } from '../../data'
 import CardTypeProduct from '../../components/CardTypeProduct/CardTypeProduct'
-import { UseProduct } from '../../Context/Context'
 import BigButton from '../../components/BigButton/BigButton'
 import { Link } from 'react-router-dom'
-import Title from '../../components/Title/Title'
-import { BsStarFill } from 'react-icons/bs'
 import RecentReviews from '../../components/RecentReviews/RecentReviews'
-import { type } from '@testing-library/user-event/dist/type'
-import { SelectedItem } from '../../Context/ContextItemSelected'
 export default function Shop() {
   const [min_value, setMin_Value] = useState(0)
   const [max_value, setMax_Value] = useState(0)
   const [array, setArray] = useState([])
-  const { items, setItems } = useContext(SelectedItem);
   
-  
-   /*  const {arrProduct} = useContext(UseProduct);
-    const [ArrProducts, setArrProducts] = useState([Products, Burgers, Souce])
-    const [OrderedProducts, setOrderedProducts] = useState(Products)
-     */
-   /*  useEffect(() =>{
-           for (let i = 0; i < ArrProducts.length; i++) {
-            if(ArrProducts[i] === arrProduct){
-                setArrProducts(ArrProducts[i])
-            }
-           }
-    }, [arrProduct])  */
     const handleCards = () =>{
         setArray(Products.filter(pro => pro.price > min_value  && pro.price < max_value ));
         
@@ -70,7 +51,7 @@ export default function Shop() {
        </Flex> 
       </Flex>
       <Flex className={"RightSectionShop"}>
-        <Flex className={"firstBoxx"}>
+        <Flex className={"firstBox"}>
           <TopBarBox title={"Filter by price"} />
           <Flex display={"flex"} alignItems={"center"} gap={"70px"}>
           <h4>Min-Value</h4>
@@ -84,7 +65,7 @@ export default function Shop() {
             handleCards()
           }} className={"filterButton"}>Filter</BigButton>
         </Flex>
-        <Flex className={"secondBoxx"}>
+        <Flex className={"secondBox"}>
           <TopBarBox title={"Product Categories"} />
           <ul>
             {Category.map((ca) =>{
@@ -103,7 +84,7 @@ export default function Shop() {
             })}
           </ul>
         </Flex>
-        <Flex className={"ThreeBoxx"}>
+        <Flex className={"ThreeBox"}>
           <TopBarBox title={"Recent reviews"} />
           {recentReviews.map((re) =>{
             return(

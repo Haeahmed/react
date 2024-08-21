@@ -97,7 +97,7 @@ a{
     transform: translateY(50px);
     transition: all 0.5s ease-in-out !important;
 }
-.buttonbottom{
+.buttonBottom{
     height: 81px;
     font-size: 22px;
     display: flex;
@@ -116,31 +116,31 @@ a{
 /* Media Queries */
 @media (max-width: 1200px) {
     .DetailsCard {
-        width: 350px; /* تقليل العرض */
-        height: auto; /* جعل الارتفاع تلقائي */
-        margin-top: 80px; /* تقليل المسافة العلوية */
+        width: 350px;
+        height: auto;
+        margin-top: 80px; 
     }
 
     .photo {
-        width: 300px; /* تقليل العرض */
-        height: auto; /* جعل الارتفاع تلقائي */
+        width: 300px;
+        height: auto;
     }
 
     .h1DetailsCard {
-        font-size: 28px; /* تقليل حجم الخط */
-        width: 80%; /* زيادة العرض */
+        font-size: 28px;
+        width: 80%; 
     }
 
     .stars {
-        font-size: 28px; /* تقليل حجم الخط */
-        gap: 30px; /* تقليل الفجوة */
+        font-size: 28px; 
+        gap: 30px; 
     }
 }
 
 @media (max-width: 768px) {
     .DetailsCard {
-        width: 60%; /* جعل العرض أكبر */
-        margin-top: 30px; /* تقليل المسافة العلوية أكثر */
+        width: 60%;
+        margin-top: 30px;
         height: 700px; /* جعل الارتفاع تلقائي */
         padding-bottom: 20px; /* إضافة حشو سفلي */
     }
@@ -211,7 +211,7 @@ a{
        padding: 10px; /* تقليل الحشو */
    }
 
-   .buttonbottom {
+   .buttonBottom {
        font-size: 18px; /* تقليل حجم الخط أكثر */
    }
 }

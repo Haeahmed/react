@@ -1,13 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+import React from "react";
 import "./SecondListHeader.css";
 import Flex from "../Flex/Flex";
 import { BiLinkAlt, BiSolidFolder } from "react-icons/bi";
 import { BsFillTagFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { UseProduct } from "../../Context/Context";
 import { Category, TopTags } from "../../data";
 export default function SecondListHeader(props) {
-  const { arrProduct, setArrProduct } = useContext(UseProduct);
   return (
     <Flex
       transform={props.transform}
@@ -22,10 +20,6 @@ export default function SecondListHeader(props) {
           {Category.map((pro) => {
             return (
               <Link
-                onClick={() => {
-                  setArrProduct(pro.product);
-                  console.log(arrProduct);
-                }}
                 to={`/shop/${pro.product}`}
               >
                 <li key={pro.id}>
@@ -44,11 +38,7 @@ export default function SecondListHeader(props) {
           {TopTags.map((pro) => {
             return (
               <Link to={`/shop/${pro.product}`}>
-                <li
-                  onClick={() => {
-                    setArrProduct(pro.product);
-                  }}
-                >
+                <li>
                   <BsFillTagFill className="iconList" />
                   {pro.product}
                 </li>

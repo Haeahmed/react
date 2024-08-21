@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useState } from "react";
 import Flex from "../Flex/Flex";
 import "./CardTypeProduct.css";
 import {
@@ -10,13 +10,11 @@ import {
   BiStar,
 } from "react-icons/bi";
 import BigButton from "../BigButton/BigButton";
-import { SelectedItem } from "../../Context/ContextItemSelected";
-import Swal from "sweetalert2";
 
 export default function CardTypeProduct(props) {
   const [displayHeart, setDisplayHeart] = useState("none");
   const [displayShare, setDisplayShare] = useState("none");
-  const [displaySearch, setDisplayShearch] = useState("none");
+  const [displaySearch, setDisplaySearch] = useState("none");
   const [colorContent, setColorContent] = useState("black");
   const [displayButton, setDisplayButton] = useState("none");
 
@@ -114,11 +112,11 @@ export default function CardTypeProduct(props) {
         <p
           onMouseLeave={() => {
             setColorContent("black");
-            setDisplayShearch("none");
+            setDisplaySearch("none");
           }}
           onMouseOver={() => {
             setColorContent("#01e281");
-            setDisplayShearch("flex");
+            setDisplaySearch("flex");
           }}
           style={{
             display: `${displaySearch}`,
@@ -134,11 +132,11 @@ export default function CardTypeProduct(props) {
         <BiSearch
           onMouseOver={() => {
             setColorContent("#01e281");
-            setDisplayShearch("flex");
+            setDisplaySearch("flex");
           }}
           onMouseLeave={() => {
             setColorContent("black");
-            setDisplayShearch("none");
+            setDisplaySearch("none");
           }}
           className="icon"
         />
@@ -147,7 +145,7 @@ export default function CardTypeProduct(props) {
           <BigButton
             onClick={props.onClick}
             display={displayButton}
-            className={"buttonbottom"}
+            className={"buttonBottom"}
           >
             <BiSolidShoppingBags />
             Add to card

@@ -7,12 +7,8 @@ import Checkout from "./Pages/Checkout/Checkout";
 import Cart from "./Pages/Cart/Cart";
 import Contact from "./Pages/Contact/Contact";
 import Shop from "./Pages/Shop/Shop";
-import { ContextProd } from "./Context/Context";
-import { ContextSelected } from "./Context/ContextItemSelected";
 function App() {
   return (
-    <ContextProd>
-    <ContextSelected>
     <Router>
         <Header />
         <Routes>
@@ -24,8 +20,6 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    </ContextSelected>
-    </ContextProd>
   );
 }
 
